@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: forwards 0.5s animate;
+}
+@keyframes animate {
+    from{
+        transform: translateY(-10px);
+        opacity: 0.1;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#title span{
+    background-color: rgba(170, 154, 154, 0.541);
+}
+#title p{
+    color: #eee;
+}
+.card{
+    margin-top: 40px;
+    transition: all 0.3s;
+}
+span i{
+    color: blue;
+}
+.card:hover{
+    border: 2px solid blue;
+    transform: translateY(-5px);
+}
+.card:hover span i{
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 7px;
+    transition: all 0.5s;
+}
+.card a{
+    all: unset;
+}

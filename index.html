@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="p-2">
+        <h1 class="text-primary">Youssef Abdallah</h1>
+    </nav>
+    <main class="d-flex justify-content-center mt-3 flex-wrap bg-primary p-5" id="title">
+        <div class="text-center">
+            <span class="text-white p-2 rounded">Get In Touch</span>
+            <h2 class="mt-3 text-white fw-bolder text-uppercase fs-1">Contact Me</h2>
+            <p class="mt-3">Have a project in mind, a question, or just want to say hello? I'd <br>love to hear from you. Fill out the form and I'll get back to you <br> within 24 hours.</p>
+        </div>
+    </main>
+    <main class="d-flex justify-content-center flex-wrap gap-5  p-3 bg-body-tertiary">
+        <form>
+            <h3 class="text-capitalize">send a message</h3>
+            <div class="mt-4">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control w-100 focus-ring focus-ring-danger" id="name" placeholder="Youssef Abdallah" required>
+            </div>
+            <div class="mt-4">
+                <label for="mail" class="form-label">Email</label>
+                <input type="email" class="form-control w-100 focus-ring focus-ring-danger" id="mail" placeholder="you@emaple.com" required>
+            </div>
+            <div class="mt-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control w-100 focus-ring focus-ring-danger" id="subject" placeholder="What is this about ?" required>
+            </div>
+            <div class="mt-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea minlength="3" maxlength="25" rows="5" cols="45" class="form-control w-100 focus-ring focus-ring-danger" id="message" placeholder="Tell me about your project, idea, or question..." required></textarea>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-primary d-block w-100">Send A Message</button>
+            </div>
+        </form>
+        <section id="contact">
+            <h3 class="fw-bold">Contact Information</h3>
+            <p class="text-secondary fw-bold">Prefer to reach out directly? Here are all the ways to connect.</p>
+            <div class="card text-center p-3">
+                <a href="mailto:yb109324@gmail.com" target="_blank">
+                    <span class="fs-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <h3 class="fs-2">Email</h3>
+                    <p>yb109324@gmail.com</p>
+                </a>
+            </div>
+            <div class="card text-center p-3">
+                <a href="tel:+201202382205" target="_blank">
+                    <span class="fs-1">
+                    <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <h3 class="fs-2">Phone</h3>
+                    <p>+20 1202382205</p>
+                </a>
+            </div>
+            <div class="card text-center p-3">
+                <a href="#">
+                    <span class="fs-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <h3 class="fs-2">Location</h3>
+                    <p>Alex, Egypt</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex justify-content-center flex-wrap bg-body-secondary">
+        <p class="fs-4 text-info mt-4">© 2026 Youssef Ahmed. Built with Bootstrap 5.</p>
+    </footer>
+</body>
+</html>
