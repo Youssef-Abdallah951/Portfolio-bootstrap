@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     animation: forwards 0.5s animate;
@@ -15,21 +20,35 @@ body{
 #title span{
     background-color: rgba(170, 154, 154, 0.541);
 }
+#home img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    animation: infinite image 2s;
+}
+@keyframes image {
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
 #title p{
     color: #eee;
 }
-.card{
+#contact .card{
     margin-top: 40px;
     transition: all 0.3s;
 }
-span i{
+#contact span i{
     color: blue;
 }
-.card:hover{
+#contact .card:hover{
     border: 2px solid blue;
     transform: translateY(-5px);
 }
-.card:hover span i{
+#contact .card:hover span i{
     color: white;
     background-color: blue;
     padding: 8px;
@@ -38,4 +57,52 @@ span i{
 }
 .card a{
     all: unset;
+}
+.fa-html5{
+    color: orangered;
+}
+#skills .card-title{
+    padding: 7px;
+}
+#skills .card-footer span{
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+#skills .card-footer span:hover{
+    background-color: white;
+    color: blue;
+}
+#skills .card{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+#skills .card:hover{
+    transform: translateY(-5px);
+}
+#skills .card-title{
+    border-radius: 7px;
+}
+#skills .card-footer{
+    border: none;
+}
+nav a{
+    position: relative;
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    transition: all 0.5s;
+}
+nav a:hover::before{
+    width: 100%;
 }
